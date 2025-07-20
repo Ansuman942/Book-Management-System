@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="DELETE">
+        <dashboard display_value="Book Management Dashboard">f53fa5e6543622107f443768c32d7168</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>2</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 16:23:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb8139aa543622107f443768c32d7191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f53fa5e6543622107f443768c32d7168</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_eb8139aa543622107f443768c32d7191</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 16:23:36</sys_updated_on>
+        <tab display_value="New Tab 2">5f81b1aa543622107f443768c32d71a8</tab>
+    </pa_m2m_dashboard_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</application>
+        <file_path/>
+        <instance_id>47f0bc89937e2e90eaceb57c5cba1003</instance_id>
+        <instance_name>nowlearning-nlinst03043310-1tthg-0001</instance_name>
+        <name>pa_m2m_dashboard_tabs_eb8139aa543622107f443768c32d7191</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs"><pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE"><dashboard display_value="Book Management Dashboard">f53fa5e6543622107f443768c32d7168</dashboard><home>false</home><homepage/><order>2</order><sys_class_name>pa_m2m_dashboard_tabs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-20 16:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eb8139aa543622107f443768c32d7191</sys_id><sys_mod_count>0</sys_mod_count><sys_name>f53fa5e6543622107f443768c32d7168</sys_name><sys_overrides/><sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package><sys_policy/><sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope><sys_update_name>pa_m2m_dashboard_tabs_eb8139aa543622107f443768c32d7191</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-20 16:23:36</sys_updated_on><tab display_value="New Tab 2">5f81b1aa543622107f443768c32d71a8</tab></pa_m2m_dashboard_tabs></record_update>]]></payload>
+        <payload_hash>315382673</payload_hash>
+        <record_name>f53fa5e6543622107f443768c32d7168</record_name>
+        <reverted_from/>
+        <source>c8d3bb92d5f222107f441794b2dce240</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 16:23:36</sys_created_on>
+        <sys_id>278139aa543622107f443768c32d7194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19828a5e00d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 16:23:36</sys_updated_on>
+        <type>Dashboard Tab</type>
+        <update_guid>2b8139aabc362210f8b8a89a5d9ab093</update_guid>
+        <update_guid_history>2b8139aabc362210f8b8a89a5d9ab093:315382673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Book Management Dashboard">459139aa543622107f443768c32d712f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 16:23:43</sys_created_on>
+        <sys_db_object display_value="" name="pa_m2m_dashboard_tabs">pa_m2m_dashboard_tabs</sys_db_object>
+        <sys_id>937fb485bf5c42978a82673cb4d7fcc9</sys_id>
+        <sys_metadata>eb8139aa543622107f443768c32d7191</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f53fa5e6543622107f443768c32d7168</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_parent display_value="Book Management Dashboard">f53fa5e6543622107f443768c32d7168</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_scope_delete display_value="">1f01e079f40f4eda9ba3e2f871066b64</sys_scope_delete>
+        <sys_update_name>pa_m2m_dashboard_tabs_eb8139aa543622107f443768c32d7191</sys_update_name>
+        <sys_update_version display_value="pa_m2m_dashboard_tabs_eb8139aa543622107f443768c32d7191">278139aa543622107f443768c32d7194</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 16:23:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

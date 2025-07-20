@@ -21,7 +21,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
         <sys_update_name>sys_dictionary_x_cdltd_book_manag_book_inventory_quantity_in_stock</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-20 04:52:30</sys_updated_on>
+        <sys_updated_on>2025-07-20 15:34:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

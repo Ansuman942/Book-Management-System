@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4876000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>stock_alert_on_low_inventory</internal_name>
+        <label_cache>[{"name":"Created_1.current.book.quantity_in_stock","label":"Trigger - Record Created➛Sales Record Record➛Book➛Quantity in Stock","reference":"","reference_display":"Quantity in Stock","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"quantity_in_stock","usedInstances":{"5c31811d-f316-43e9-9574-5206537d6600":["condition"]}},{"name":"Created_1.current.book.reorder_level","label":"Trigger - Record Created➛Sales Record Record➛Book➛Reorder Level","reference":"","reference_display":"Reorder Level","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"reorder_level","usedInstances":{"5c31811d-f316-43e9-9574-5206537d6600":["condition"]}},{"name":"Created_1.current.book","label":"Trigger - Record Created➛Sales Record Record➛Book","reference":"x_cdltd_book_manag_book_inventory","reference_display":"Book Inventory","type":"reference","base_type":"reference","parent_table_name":"x_cdltd_book_manag_sales_record","column_name":"book","usedInstances":{"ee067362-3ff9-4581-afa4-cd5557df4645":["conditions"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock","label":"1 - Look Up Record➛Book Inventory Record➛Quantity in Stock","reference":"","reference_display":"Quantity in Stock","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"quantity_in_stock","usedInstances":{"5dbad911-cc9b-4518-ae58-c9636f1638b8":["condition"],"787adcb5-c429-4d3e-94af-2614001ade5f":["current_stock"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.reorder_level","label":"1 - Look Up Record➛Book Inventory Record➛Reorder Level","reference":"","reference_display":"Reorder Level","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"reorder_level","usedInstances":{"5dbad911-cc9b-4518-ae58-c9636f1638b8":["condition"]}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Sales Record Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_cdltd_book_manag_sales_record","column_name":"sys_created_by","usedInstances":{"787adcb5-c429-4d3e-94af-2614001ade5f":["sys_created_by"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.sys_id","label":"1 - Look Up Record➛Book Inventory Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"sys_id","usedInstances":{"787adcb5-c429-4d3e-94af-2614001ade5f":["book"]}}]</label_cache>
+        <master_snapshot>9f45d9e654b222107f443768c32d7146</master_snapshot>
+        <name>Stock Alert on Low Inventory</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>7745d9e654b222107f443768c32d71cd</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 12:58:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8b20962547222107f443768c32d7148</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Stock Alert on Low Inventory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name>sys_hub_flow_b8b20962547222107f443768c32d7148</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b8b20962547222107f443768c32d7148"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b8b20962547222107f443768c32d7148"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_cdltd_book_manag_sales_record">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7745d9e654b222107f443768c32d71cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <table>x_cdltd_book_manag_sales_record</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>b8b20962547222107f443768c32d7148</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>3345d9e654b222107f443768c32d71ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <trigger display_value="">7745d9e654b222107f443768c32d71cd</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b8b20962547222107f443768c32d7148^sys_idNOT IN3345d9e654b222107f443768c32d71ce"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b8b20962547222107f443768c32d7148^sys_idNOT IN3c33cd62547222107f443768c32d71ce"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:01:04</sys_created_on>
+        <sys_id>3c33cd62547222107f443768c32d71ce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3c33cd62547222107f443768c32d71ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c33cd62547222107f443768c32d71ce</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:01:04</sys_created_on>
+        <sys_id>383381a2547222107f443768c32d716f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:01:04</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c33cd62547222107f443768c32d71ce</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:01:04</sys_created_on>
+        <sys_id>703381a2547222107f443768c32d7170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:01:04</sys_updated_on>
+        <value>x_cdltd_book_manag_sales_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b8b20962547222107f443768c32d7148"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b8b20962547222107f443768c32d7148^sys_idNOT INbcb20962547222107f443768c32d714a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b8b20962547222107f443768c32d7148</id>
+        <name>Stock Alert on Low Inventory</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 12:58:53</sys_created_on>
+        <sys_id>bcb20962547222107f443768c32d714a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 12:58:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bcb20962547222107f443768c32d714a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b8b20962547222107f443768c32d7148^sys_idNOT IN8b4599e654b222107f443768c32d71fb,9b45d9e654b222107f443768c32d7102"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</model>
+        <model_id>b8b20962547222107f443768c32d7148</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:09</sys_created_on>
+        <sys_id>8b4599e654b222107f443768c32d71fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8b4599e654b222107f443768c32d71fb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</model>
+        <model_id>b8b20962547222107f443768c32d7148</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:09</sys_created_on>
+        <sys_id>9b45d9e654b222107f443768c32d7102</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9b45d9e654b222107f443768c32d7102"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b8b20962547222107f443768c32d7148"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b8b20962547222107f443768c32d7148"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b8b20962547222107f443768c32d7148^sys_idNOT IN050481e2547222107f443768c32d7161,c6f40526547222107f443768c32d719e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:04:38</sys_created_on>
+        <sys_id>050481e2547222107f443768c32d7161</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:23:02</sys_updated_on>
+        <ui_id>ee067362-3ff9-4581-afa4-cd5557df4645</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=050481e2547222107f443768c32d7161"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>050481e2547222107f443768c32d7161</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:05:53</sys_created_on>
+        <sys_id>574449e2547222107f443768c32d7113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:05:53</sys_updated_on>
+        <value>x_cdltd_book_manag_book_inventory</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=050481e2547222107f443768c32d7161"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>050481e2547222107f443768c32d7161</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:05:53</sys_created_on>
+        <sys_id>474405e2547222107f443768c32d71b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:05:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created_1.current.book}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>050481e2547222107f443768c32d7161</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:05:53</sys_created_on>
+        <sys_id>5f4405e2547222107f443768c32d71b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:05:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=050481e2547222107f443768c32d7161"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=050481e2547222107f443768c32d7161"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5dbad911-cc9b-4518-ae58-c9636f1638b8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:08:48</sys_created_on>
+        <sys_id>c6f40526547222107f443768c32d719e</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:23:02</sys_updated_on>
+        <ui_id>787adcb5-c429-4d3e-94af-2614001ade5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6f40526547222107f443768c32d719e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6f40526547222107f443768c32d719e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:13:28</sys_created_on>
+        <sys_id>12068966547222107f443768c32d7112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:13:28</sys_updated_on>
+        <value>x_cdltd_book_manag_stock_alert</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6f40526547222107f443768c32d719e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:13:28</sys_created_on>
+        <sys_id>5e068966547222107f443768c32d7111</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:16:21</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6f40526547222107f443768c32d719e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c6f40526547222107f443768c32d719e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:13:28</sys_created_on>
+        <sys_id>1a068966547222107f443768c32d7111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:13:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c6f40526547222107f443768c32d719e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:13:28</sys_created_on>
+        <sys_id>da068966547222107f443768c32d7111</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:15:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>book={{ee067362-3ff9-4581-afa4-cd5557df4645.Record.sys_id}}^current_stock={{ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock}}^alert_status=trigerred^generated_on=2025-07-20 19:45:00</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c6f40526547222107f443768c32d719e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c6f40526547222107f443768c32d719e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b8b20962547222107f443768c32d7148"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b8b20962547222107f443768c32d7148^sys_idNOT INeb5449e2547222107f443768c32d7115"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1f45d9e654b222107f443768c32d710f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:06:10</sys_created_on>
+        <sys_id>eb5449e2547222107f443768c32d7115</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <ui_id>5dbad911-cc9b-4518-ae58-c9636f1638b8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eb5449e2547222107f443768c32d7115"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>eb5449e2547222107f443768c32d7115</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:08:18</sys_created_on>
+        <sys_id>fad40526547222107f443768c32d7105</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:10:05</sys_updated_on>
+        <value>Low Check Stock</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eb5449e2547222107f443768c32d7115"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>eb5449e2547222107f443768c32d7115</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:08:18</sys_created_on>
+        <sys_id>7ad40526547222107f443768c32d7105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:08:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock}}&lt;{{ee067362-3ff9-4581-afa4-cd5557df4645.Record.reorder_level}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>eb5449e2547222107f443768c32d7115</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 13:08:18</sys_created_on>
+        <sys_id>b6d40526547222107f443768c32d7105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 13:08:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=eb5449e2547222107f443768c32d7115"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb5449e2547222107f443768c32d7115"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b8b20962547222107f443768c32d7148"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b8b20962547222107f443768c32d7148"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148^sys_idNOT IN5745d9e654b222107f443768c32d7101,9f45d9e654b222107f443768c32d7104"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:09</sys_created_on>
+        <sys_id>5745d9e654b222107f443768c32d7101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:09</sys_created_on>
+        <sys_id>9f45d9e654b222107f443768c32d7104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b8b20962547222107f443768c32d7148"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b8b20962547222107f443768c32d7148"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b8b20962547222107f443768c32d7148"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>stock_alert_on_low_inventory</internal_name>
+        <label_cache>[{"name":"Created_1.current.book.quantity_in_stock","label":"Trigger - Record Created➛Sales Record Record➛Book➛Quantity in Stock","reference":"","reference_display":"Quantity in Stock","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"quantity_in_stock","usedInstances":{"5c31811d-f316-43e9-9574-5206537d6600":["condition"]}},{"name":"Created_1.current.book.reorder_level","label":"Trigger - Record Created➛Sales Record Record➛Book➛Reorder Level","reference":"","reference_display":"Reorder Level","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"reorder_level","usedInstances":{"5c31811d-f316-43e9-9574-5206537d6600":["condition"]}},{"name":"Created_1.current.book","label":"Trigger - Record Created➛Sales Record Record➛Book","reference":"x_cdltd_book_manag_book_inventory","reference_display":"Book Inventory","type":"reference","base_type":"reference","parent_table_name":"x_cdltd_book_manag_sales_record","column_name":"book","usedInstances":{"ee067362-3ff9-4581-afa4-cd5557df4645":["conditions"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock","label":"1 - Look Up Record➛Book Inventory Record➛Quantity in Stock","reference":"","reference_display":"Quantity in Stock","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"quantity_in_stock","usedInstances":{"5dbad911-cc9b-4518-ae58-c9636f1638b8":["condition"],"787adcb5-c429-4d3e-94af-2614001ade5f":["current_stock"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.reorder_level","label":"1 - Look Up Record➛Book Inventory Record➛Reorder Level","reference":"","reference_display":"Reorder Level","type":"integer","base_type":"integer","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"reorder_level","usedInstances":{"5dbad911-cc9b-4518-ae58-c9636f1638b8":["condition"]}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Sales Record Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_cdltd_book_manag_sales_record","column_name":"sys_created_by","usedInstances":{"787adcb5-c429-4d3e-94af-2614001ade5f":["sys_created_by"]}},{"name":"ee067362-3ff9-4581-afa4-cd5557df4645.Record.sys_id","label":"1 - Look Up Record➛Book Inventory Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_cdltd_book_manag_book_inventory","column_name":"sys_id","usedInstances":{"787adcb5-c429-4d3e-94af-2614001ade5f":["book"]}}]</label_cache>
+        <master>true</master>
+        <name>Stock Alert on Low Inventory</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Stock Alert on Low Inventory">b8b20962547222107f443768c32d7148</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f45d9e654b222107f443768c32d7146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9f45d9e654b222107f443768c32d7146"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9f45d9e654b222107f443768c32d7146^sys_idNOT IN2745d9e654b222107f443768c32d71b8"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>2745d9e654b222107f443768c32d71b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2745d9e654b222107f443768c32d71b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2745d9e654b222107f443768c32d71b8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>6345d9e654b222107f443768c32d71b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <value>x_cdltd_book_manag_sales_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2745d9e654b222107f443768c32d71b8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>af45d9e654b222107f443768c32d71b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9f45d9e654b222107f443768c32d7146"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9f45d9e654b222107f443768c32d7146^sys_idNOT INa345d9e654b222107f443768c32d7148"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9f45d9e654b222107f443768c32d7146</id>
+        <name>Stock Alert on Low Inventory</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>a345d9e654b222107f443768c32d7148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a345d9e654b222107f443768c32d7148"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9f45d9e654b222107f443768c32d7146^sys_idNOT IN6745d9e654b222107f443768c32d7198,ab45d9e654b222107f443768c32d7187"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</model>
+        <model_id>9f45d9e654b222107f443768c32d7146</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>6745d9e654b222107f443768c32d7198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6745d9e654b222107f443768c32d7198"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</model>
+        <model_id>9f45d9e654b222107f443768c32d7146</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>ab45d9e654b222107f443768c32d7187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ab45d9e654b222107f443768c32d7187"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9f45d9e654b222107f443768c32d7146^sys_idNOT IN2b45d9e654b222107f443768c32d71af,2f45d9e654b222107f443768c32d71b6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>2b45d9e654b222107f443768c32d71af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <ui_id>ee067362-3ff9-4581-afa4-cd5557df4645</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2b45d9e654b222107f443768c32d71af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2b45d9e654b222107f443768c32d71af</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>2f45d9e654b222107f443768c32d71b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <value>x_cdltd_book_manag_book_inventory</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2b45d9e654b222107f443768c32d71af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2b45d9e654b222107f443768c32d71af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>e745d9e654b222107f443768c32d71b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created_1.current.book}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2b45d9e654b222107f443768c32d71af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>ab45d9e654b222107f443768c32d71b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2b45d9e654b222107f443768c32d71af"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b45d9e654b222107f443768c32d71af"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5dbad911-cc9b-4518-ae58-c9636f1638b8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>2f45d9e654b222107f443768c32d71b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <ui_id>787adcb5-c429-4d3e-94af-2614001ade5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2f45d9e654b222107f443768c32d71b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2f45d9e654b222107f443768c32d71b6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>2345d9e654b222107f443768c32d71b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <value>x_cdltd_book_manag_stock_alert</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2f45d9e654b222107f443768c32d71b6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2f45d9e654b222107f443768c32d71b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>eb45d9e654b222107f443768c32d71b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2f45d9e654b222107f443768c32d71b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_id>af45d9e654b222107f443768c32d71b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>book={{ee067362-3ff9-4581-afa4-cd5557df4645.Record.sys_id}}^current_stock={{ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock}}^alert_status=trigerred^generated_on=2025-07-20 19:45:00</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f45d9e654b222107f443768c32d71b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f45d9e654b222107f443768c32d71b6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9f45d9e654b222107f443768c32d7146^sys_idNOT IN6b45d9e654b222107f443768c32d71a3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1f45d9e654b222107f443768c32d710f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Stock Alert on Low Inventory">9f45d9e654b222107f443768c32d7146</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>6b45d9e654b222107f443768c32d71a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <ui_id>5dbad911-cc9b-4518-ae58-c9636f1638b8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6b45d9e654b222107f443768c32d71a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6b45d9e654b222107f443768c32d71a3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>2345d9e654b222107f443768c32d71a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <value>Low Check Stock</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6b45d9e654b222107f443768c32d71a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6b45d9e654b222107f443768c32d71a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>af45d9e654b222107f443768c32d71a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee067362-3ff9-4581-afa4-cd5557df4645.Record.quantity_in_stock}}&lt;{{ee067362-3ff9-4581-afa4-cd5557df4645.Record.reorder_level}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6b45d9e654b222107f443768c32d71a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>e745d9e654b222107f443768c32d71a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6b45d9e654b222107f443768c32d71a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6b45d9e654b222107f443768c32d71a3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9f45d9e654b222107f443768c32d7146"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146^sys_idNOT INab45d9e654b222107f443768c32d719c,eb45d9e654b222107f443768c32d7194"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>ab45d9e654b222107f443768c32d719c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:10</sys_created_on>
+        <sys_id>eb45d9e654b222107f443768c32d7194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9f45d9e654b222107f443768c32d7146"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9f45d9e654b222107f443768c32d7146"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9f45d9e654b222107f443768c32d7146"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b8b20962547222107f443768c32d7148</sys_id>
+        <latest_snapshot>9f45d9e654b222107f443768c32d7146</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b8b20962547222107f443768c32d7148^sys_idNOT INf745d9e654b222107f443768c32d71cf"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f745d9e654b222107f443768c32d71cf","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b8b20962547222107f443768c32d7148</plan_id>
+        <snapshot>51f5592a54b222107f443768c32d7194</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 14:20:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f745d9e654b222107f443768c32d71cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 14:20:11</sys_updated_on>
+        <trigger display_value="">7745d9e654b222107f443768c32d71cd</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b8b20962547222107f443768c32d7148"/>
+</record_update>

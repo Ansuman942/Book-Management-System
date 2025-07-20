@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="book" table="x_cdltd_book_manag_sales_record">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="is_low_stock" table="x_cdltd_book_manag_book_inventory">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Book</column_label>
+        <column_label>Is Low Stock</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,21 +26,21 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>book</element>
+        <element>is_low_stock</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>x_cdltd_book_manag_sales_record</name>
+        <max_length>40</max_length>
+        <name>x_cdltd_book_manag_book_inventory</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_cdltd_book_manag_book_inventory">x_cdltd_book_manag_book_inventory</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-20 04:59:28</sys_created_on>
-        <sys_name>Book</sys_name>
+        <sys_created_on>2025-07-20 15:42:07</sys_created_on>
+        <sys_name>Is Low Stock</sys_name>
         <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
-        <sys_update_name>sys_dictionary_x_cdltd_book_manag_sales_record_book</sys_update_name>
+        <sys_update_name>sys_dictionary_x_cdltd_book_manag_book_inventory_is_low_stock</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-20 16:05:01</sys_updated_on>
+        <sys_updated_on>2025-07-20 15:42:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

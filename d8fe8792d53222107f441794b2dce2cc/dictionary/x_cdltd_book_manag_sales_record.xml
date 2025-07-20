@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ff349b5ad53222107f441794b2dce2f7" label="Sales Record" max_length="40" name="x_cdltd_book_manag_sales_record" type="collection">
-        <element display="true" label="Book" max_length="32" name="book" reference="x_cdltd_book_manag_book_inventory" type="reference"/>
+        <element label="Book" max_length="32" name="book" reference="x_cdltd_book_manag_book_inventory" type="reference"/>
         <element label="Quantity Sold" max_length="40" name="quantity_sold" type="integer"/>
         <element label="Sales Clerk" max_length="32" name="sales_clerk" reference="sys_user" type="reference"/>
         <element label="Sale Date" max_length="40" name="sale_date" type="glide_date_time"/>
