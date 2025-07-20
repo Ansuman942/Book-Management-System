@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_cdltd_book_manag_book_inventory" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Book Inventory - Default view" name="x_cdltd_book_manag_book_inventory" related_list="NULL" sys_domain="global" view="Default view">4d6163dad57222107f441794b2dce287</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_cdltd_book_manag_sales_record.book</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-20 05:53:44</sys_created_on>
+            <sys_id>cd6163dad57222107f441794b2dce288</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-20 05:53:44</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Book Inventory - Default view" name="x_cdltd_book_manag_book_inventory" related_list="NULL" sys_domain="global" view="Default view">4d6163dad57222107f441794b2dce287</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_cdltd_book_manag_stock_alert.book</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-20 05:53:44</sys_created_on>
+            <sys_id>c56163dad57222107f441794b2dce289</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-20 05:53:44</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Book Inventory - Default view</calculated_name>
+            <filter/>
+            <name>x_cdltd_book_manag_book_inventory</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-20 05:53:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d6163dad57222107f441794b2dce287</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Book Inventory - Default view</sys_name>
+            <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+            <sys_update_name>sys_ui_related_x_cdltd_book_manag_book_inventory_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-20 05:53:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

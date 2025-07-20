@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Book Inventory</name>
+        <order>100</order>
+        <roles>x_cdltd_book_manag.book_inventory_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:40:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5b01356d53222107f441794b2dce261</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book Inventory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name>sys_app_application_b5b01356d53222107f441794b2dce261</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:40:52</sys_updated_on>
+        <title>Book Inventory</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</application>
+        <file_path/>
+        <instance_id>47f0bc89937e2e90eaceb57c5cba1003</instance_id>
+        <instance_name>nowlearning-nlinst03043310-1tthg-0001</instance_name>
+        <name>sys_app_application_b5b01356d53222107f441794b2dce261</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Book Inventory</name><order>100</order><roles>x_cdltd_book_manag.book_inventory_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-20 04:40:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b5b01356d53222107f441794b2dce261</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Book Inventory</sys_name><sys_overrides/><sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package><sys_policy/><sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope><sys_update_name>sys_app_application_b5b01356d53222107f441794b2dce261</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-20 04:40:52</sys_updated_on><title>Book Inventory</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1122336122</payload_hash>
+        <record_name>Book Inventory</record_name>
+        <reverted_from/>
+        <source>9cfe8792d53222107f441794b2dce2d0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:40:52</sys_created_on>
+        <sys_id>bdb01356d53222107f441794b2dce263</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198262282c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:40:52</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>b1b013567b322210def5544f648a6763</update_guid>
+        <update_guid_history>b1b013567b322210def5544f648a6763:1122336122</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Book Inventory">0792db96d53222107f441794b2dce212</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:49:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>65b647be24a14a588023993de2aff690</sys_id>
+        <sys_metadata>b5b01356d53222107f441794b2dce261</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book Inventory</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_scope_delete display_value="">1f01e079f40f4eda9ba3e2f871066b64</sys_scope_delete>
+        <sys_update_name>sys_app_application_b5b01356d53222107f441794b2dce261</sys_update_name>
+        <sys_update_version display_value="sys_app_application_b5b01356d53222107f441794b2dce261">bdb01356d53222107f441794b2dce263</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:49:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

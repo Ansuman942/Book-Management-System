@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a995dbdad53222107f441794b2dce261" label="Stock Alert" max_length="40" name="x_cdltd_book_manag_stock_alert" type="collection">
+        <element choice="1" label="Alert Status" max_length="40" name="alert_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Trigerred" sequence="0" value="trigerred"/>
+                <element inactive_on_update="false" label="Resolved" sequence="1" value="resolved"/>
+            </choice>
+        </element>
+        <element display="true" label="Book" max_length="32" name="book" reference="x_cdltd_book_manag_book_inventory" type="reference"/>
+        <element label="Current Stock" max_length="40" name="current_stock" type="integer"/>
+        <element label="Generated On" max_length="40" name="generated_on" type="glide_date_time"/>
+        <index name="index">
+            <element name="book"/>
+        </index>
+    </element>
+</database>

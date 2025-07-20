@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:40:53</sys_created_on>
+        <sys_id>ceb01356d53222107f441794b2dce27f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_book_manag_book_inventory.x_cdltd_book_manag.book_inventory_user</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_security_acl display_value="x_cdltd_book_manag_book_inventory">7db01356d53222107f441794b2dce27c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ceb01356d53222107f441794b2dce27f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:40:53</sys_updated_on>
+        <sys_user_role display_value="x_cdltd_book_manag.book_inventory_user" name="x_cdltd_book_manag.book_inventory_user">85b09b16d53222107f441794b2dce243</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</application>
+        <file_path/>
+        <instance_id>47f0bc89937e2e90eaceb57c5cba1003</instance_id>
+        <instance_name>nowlearning-nlinst03043310-1tthg-0001</instance_name>
+        <name>sys_security_acl_role_ceb01356d53222107f441794b2dce27f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-20 04:40:53</sys_created_on><sys_id>ceb01356d53222107f441794b2dce27f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_cdltd_book_manag_book_inventory.x_cdltd_book_manag.book_inventory_user</sys_name><sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package><sys_policy/><sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope><sys_security_acl display_value="x_cdltd_book_manag_book_inventory">7db01356d53222107f441794b2dce27c</sys_security_acl><sys_update_name>sys_security_acl_role_ceb01356d53222107f441794b2dce27f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-20 04:40:53</sys_updated_on><sys_user_role display_value="x_cdltd_book_manag.book_inventory_user" name="x_cdltd_book_manag.book_inventory_user">85b09b16d53222107f441794b2dce243</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>55192007</payload_hash>
+        <record_name>x_cdltd_book_manag_book_inventory.x_cdltd_book_manag.book_inventory_user</record_name>
+        <reverted_from/>
+        <source>9cfe8792d53222107f441794b2dce2d0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:40:53</sys_created_on>
+        <sys_id>cab01356d53222107f441794b2dce282</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198262285ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:40:53</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>ceb01356fe322210f946da08da596281</update_guid>
+        <update_guid_history>ceb01356fe322210f946da08da596281:55192007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_cdltd_book_manag_book_inventory.x_cdltd_book_manag.book_inventory_user">b36297d6d53222107f441794b2dce292</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:48:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1d0972dfac2a466c85cb8235cef27339</sys_id>
+        <sys_metadata>ceb01356d53222107f441794b2dce27f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_book_manag_book_inventory.x_cdltd_book_manag.book_inventory_user</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_parent display_value="">7db01356d53222107f441794b2dce27c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_scope_delete display_value="">1f01e079f40f4eda9ba3e2f871066b64</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_ceb01356d53222107f441794b2dce27f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_ceb01356d53222107f441794b2dce27f">cab01356d53222107f441794b2dce282</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:48:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

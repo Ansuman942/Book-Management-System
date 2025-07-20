@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_cdltd_book_manag.sales_record_user" name="x_cdltd_book_manag.sales_record_user">1af4db5ad53222107f441794b2dce2bc</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:59:28</sys_created_on>
+        <sys_id>96f4db5ad53222107f441794b2dce2be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1af4db5ad53222107f441794b2dce2bc</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name>sys_embedded_help_role_96f4db5ad53222107f441794b2dce2be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:59:28</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

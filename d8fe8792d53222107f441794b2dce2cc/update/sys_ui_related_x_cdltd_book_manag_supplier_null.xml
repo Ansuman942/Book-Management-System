@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_cdltd_book_manag_supplier" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Supplier - Default view" name="x_cdltd_book_manag_supplier" related_list="NULL" sys_domain="global" view="Default view">374b9392d57222107f441794b2dce2d2</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_cdltd_book_manag_purchase_order.supplier</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-20 05:27:09</sys_created_on>
+            <sys_id>bb4b17d2d57222107f441794b2dce2ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-20 05:27:09</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Supplier - Default view</calculated_name>
+            <filter/>
+            <name>x_cdltd_book_manag_supplier</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-20 05:27:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>374b9392d57222107f441794b2dce2d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Supplier - Default view</sys_name>
+            <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+            <sys_update_name>sys_ui_related_x_cdltd_book_manag_supplier_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-20 05:27:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

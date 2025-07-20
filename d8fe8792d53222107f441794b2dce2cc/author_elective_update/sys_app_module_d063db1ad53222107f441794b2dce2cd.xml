@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Book Inventory">1463db1ad53222107f441794b2dce2ca</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Book Inventories</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_cdltd_book_manag_book_inventory</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_cdltd_book_manag.book_inventory_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:52:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d063db1ad53222107f441794b2dce2cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book Inventories</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_update_name>sys_app_module_d063db1ad53222107f441794b2dce2cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:52:30</sys_updated_on>
+        <timeline_page/>
+        <title>Book Inventories</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</application>
+        <file_path/>
+        <instance_id>47f0bc89937e2e90eaceb57c5cba1003</instance_id>
+        <instance_name>nowlearning-nlinst03043310-1tthg-0001</instance_name>
+        <name>sys_app_module_d063db1ad53222107f441794b2dce2cd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Book Inventory">1463db1ad53222107f441794b2dce2ca</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Book Inventories</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_cdltd_book_manag_book_inventory</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_cdltd_book_manag.book_inventory_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-20 04:52:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d063db1ad53222107f441794b2dce2cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Book Inventories</sys_name><sys_overrides/><sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package><sys_policy/><sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope><sys_update_name>sys_app_module_d063db1ad53222107f441794b2dce2cd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-20 04:52:30</sys_updated_on><timeline_page/><title>Book Inventories</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1331120020</payload_hash>
+        <record_name>Book Inventories</record_name>
+        <reverted_from/>
+        <source>9cfe8792d53222107f441794b2dce2d0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 04:52:31</sys_created_on>
+        <sys_id>1863db1ad53222107f441794b2dce2cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198262d2aae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 04:52:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>1c63db1aeb322210741bd5fa4c9ab8ce</update_guid>
+        <update_guid_history>1c63db1aeb322210741bd5fa4c9ab8ce:1331120020</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Book Inventories">28291fded53222107f441794b2dce279</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 05:17:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>7381ece305e14b78a9ef9f3f0c418564</sys_id>
+        <sys_metadata>d063db1ad53222107f441794b2dce2cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book Inventories</sys_name>
+        <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
+        <sys_scope_delete display_value="">1f01e079f40f4eda9ba3e2f871066b64</sys_scope_delete>
+        <sys_update_name>sys_app_module_d063db1ad53222107f441794b2dce2cd</sys_update_name>
+        <sys_update_version display_value="sys_app_module_d063db1ad53222107f441794b2dce2cd">1863db1ad53222107f441794b2dce2cf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-20 05:17:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
