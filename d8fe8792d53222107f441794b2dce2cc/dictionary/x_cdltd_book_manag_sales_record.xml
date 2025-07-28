@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ff349b5ad53222107f441794b2dce2f7" label="Sales Record" max_length="40" name="x_cdltd_book_manag_sales_record" type="collection">
-        <element label="Book" max_length="32" name="book" reference="x_cdltd_book_manag_book_inventory" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;    var book = new GlideRecord('x_cdltd_book_manag_book_inventory'); // use your actual scoped table&#10;    if (book.get(current.book)) {&#10;        return book.price * current.quantity_sold;&#10;    } else {&#10;        return 0;&#10;    }&#10;})(current);" label="Total Price" max_length="40" name="total_price" type="currency" virtual="true"/>
+        <element display="true" label="Book" max_length="32" name="book" reference="x_cdltd_book_manag_book_inventory" type="reference"/>
         <element label="Quantity Sold" max_length="40" name="quantity_sold" type="integer"/>
         <element label="Sales Clerk" max_length="32" name="sales_clerk" reference="sys_user" type="reference"/>
         <element label="Sale Date" max_length="40" name="sale_date" type="glide_date_time"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;    var book = new GlideRecord('x_cdltd_book_manag_book_inventory'); // use your actual scoped table&#13;&#10;    if (book.get(current.book)) {&#13;&#10;        return book.price * current.quantity_sold;&#13;&#10;    } else {&#13;&#10;        return 0;&#13;&#10;    }&#13;&#10;})(current);&#13;&#10;" label="Total Price" max_length="40" name="total_price" type="currency" virtual="true"/>
         <index name="index">
             <element name="book"/>
         </index>

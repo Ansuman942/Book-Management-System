@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -73,7 +73,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
-        <no_bulk_migration>false</no_bulk_migration>
+        <no_bulk_migration>true</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>
@@ -109,14 +109,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-20 15:44:11</sys_created_on>
         <sys_id>5688edae54f222107f443768c32d7102</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Low Stock Items</sys_name>
         <sys_package display_value="Book Management System" source="x_cdltd_book_manag">d8fe8792d53222107f441794b2dce2cc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Book Management System">d8fe8792d53222107f441794b2dce2cc</sys_scope>
         <sys_update_name>sys_report_5688edae54f222107f443768c32d7102</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-20 16:21:32</sys_updated_on>
+        <sys_updated_on>2025-07-28 15:38:02</sys_updated_on>
         <table>x_cdltd_book_manag_book_inventory</table>
         <title>Low Stock Items</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

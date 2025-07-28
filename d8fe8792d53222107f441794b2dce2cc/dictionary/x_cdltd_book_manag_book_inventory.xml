@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="67b2d3d6d53222107f441794b2dce235" label="Book Inventory" max_length="40" name="x_cdltd_book_manag_book_inventory" type="collection">
+        <element label="Is Low Stock" max_length="40" name="is_low_stock" type="boolean"/>
+        <element display="true" label="Title" max_length="40" name="title" type="string"/>
         <element label="Author" max_length="40" name="author" type="string"/>
+        <element label="Price" max_length="20" name="price" type="currency"/>
         <element choice="1" label="Genre" max_length="40" name="genre" type="choice">
             <choice/>
         </element>
-        <element label="ISBN" max_length="40" name="isbn" type="string"/>
-        <element label="Is Low Stock" max_length="40" name="is_low_stock" type="boolean"/>
-        <element label="Price" max_length="20" name="price" type="currency"/>
-        <element label="Quantity in Stock" max_length="40" name="quantity_in_stock" type="integer"/>
         <element label="Reorder Level" max_length="40" name="reorder_level" type="integer"/>
+        <element label="Quantity in Stock" max_length="40" name="quantity_in_stock" type="integer"/>
+        <element label="ISBN" max_length="40" name="isbn" type="string"/>
         <element label="Supplier" max_length="32" name="supplier" reference="x_cdltd_book_manag_supplier" type="reference"/>
-        <element display="true" label="Title" max_length="40" name="title" type="string"/>
         <index name="index">
             <element name="supplier"/>
         </index>
