@@ -1,9 +1,9 @@
-📚 Book Management System – ServiceNow Studio
+## Book Management System – ServiceNow Studio
 
 A custom application built on the ServiceNow Platform to manage book records efficiently.
 This project was developed as part of my ServiceNow trainee program while practicing CSA & CAD concepts.
 
-🚀 Features
+## Features
 
    - Add, update, and delete book records
    - Automated data validation using Client Scripts
@@ -12,7 +12,7 @@ This project was developed as part of my ServiceNow trainee program while practi
    - Clean form design with field-level controls
    - Search and filter books using standard list functionalities
 
-🛠️ ServiceNow Concepts Used
+## ServiceNow Concepts Used
 
  - Custom Table (u_book_records)
  - Forms & Lists Configuration
@@ -23,17 +23,16 @@ This project was developed as part of my ServiceNow trainee program while practi
  - Flow Designer (optional)
  - Access Control (ACL) basics
 
-📁 Application Structure
+## Application Structure
 
-  Component	Description
   
-   u_book_records	 - Stores book details (title, author, price, ISBN, published year)
-   Business Rules	 - Automate updates, validations, default values
-   Client Scripts	 - Validate form inputs, improve UX
-   UI Policies	 - Show/Hide and Make Mandatory conditions
-   Flow Designer -	Approval or post-create actions (if implemented)
+  - u_book_records	 - Stores book details (title, author, price, ISBN, published year)
+  - Business Rules	 - Automate updates, validations, default values
+ -  Client Scripts	 - Validate form inputs, improve UX
+   - UI Policies	 - Show/Hide and Make Mandatory conditions
+   - Flow Designer -	Approval or post-create actions (if implemented)
 
-🎯 What I Learned from This Project
+## What I Learned from This Project
 
  - How to build a complete application from scratch in ServiceNow Studio
  - Working with Business Rules and Client Scripts
@@ -42,7 +41,7 @@ This project was developed as part of my ServiceNow trainee program while practi
  - Basics of form/UI customization
  - Understanding application logic flow
 
-🧪 How to Test the App
+## How to Test the App
 
 - Install/update the application from Studio
 - Open Book Management System > Manage Books
